@@ -1,0 +1,19 @@
+# action.yml
+name: 'Remove action'
+description: 'Remove files'
+inputs:
+  dir:
+    description: 'The dir path to remove files'
+    required: true
+  files:
+    description: 'Newline-delimited list of paths'
+    required: true
+outputs:
+  files:
+    description: 'list of removed paths'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir }}
+    - ${{ inputs.files }}
