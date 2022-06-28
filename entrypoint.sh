@@ -11,10 +11,9 @@
 IFS='
 '
 
-pwd
-echo $1
-
-#for file in $(ls $1)
+PWD="$(pwd)"
+ls "${PWD}/${1}"
+#for file in $(ls "${PWD}/${1}")
 #do
 #  echo $file
 #done
