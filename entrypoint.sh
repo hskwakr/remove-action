@@ -11,9 +11,12 @@
 IFS='
 '
 
-for file in $(ls $1)
-do
-  echo $file
-done
+pwd
+echo $1
+
+#for file in $(ls $1)
+#do
+#  echo $file
+#done
 
 # Determine the file is in $2
