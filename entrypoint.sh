@@ -11,8 +11,7 @@
 IFS='
 '
 
-PWD="$(pwd)"
-ls "${PWD}/${1}"
+ls
 #for file in $(ls "${PWD}/${1}")
 #do
 #  echo $file
